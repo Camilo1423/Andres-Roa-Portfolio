@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.545" height="32.298" viewBox="0 0 28.545 32.298">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Arrow" transform="translate(1.414 1)">
+    <path id="Trazado_2" data-name="Trazado 2" class="cls-1" d="M382.15,998.2v30.3l-12.858-12.858" transform="translate(-369.292 -998.2)"/>
+    <path id="Trazado_3" data-name="Trazado 3" class="cls-1" d="M369.292,998.8v29.788l12.858-12.858" transform="translate(-356.433 -998.289)"/>
+  </g>
+</svg>

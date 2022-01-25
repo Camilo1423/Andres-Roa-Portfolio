@@ -1,0 +1,247 @@
+
+/*===== Font of google fonts =====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*==== var root=====*/
+
+:root {
+    --font-family-: 'Montserrat', sans-serif;
+    --color-black-: #212121;
+    --color-gray-: #5F6A6A;
+    --color-btn-: #2B2B2B;
+    --color-scroll: #707070;
+    --box-shadow-: 0px 0px 20px rgb(0 0 0 / 20%);
+}
+
+
+
+/*=== reset body ====*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*==== Body =====*/
+
+body {
+    font-family: var(--font-family-);
+    width: 100%;
+    height: 2500px;
+}
+
+/*==== Scroll Bar =====*/
+
+body::-webkit-scrollbar {
+    width: 7px;
+    margin-right: 15px;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    border-right: 10px solid var(--color-scroll);
+}
+
+/*==== Nav Bar =====*/
+
+header {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: 0.6s ease;
+}
+
+header.Sticky {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: var(--box-shadow-);
+}
+
+.text-andres .title-name {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    color: var(--color-black-);
+}
+
+.text-andres a {
+    text-decoration: none;
+}
+
+.menu-bar .nav-initial a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-black-);
+    margin: 24px;
+    position: relative;
+}
+
+.menu-bar .nav-initial a:before {
+    content: '';
+    position: absolute;
+    background: var(--color-black-);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.menu-bar .nav-initial a:hover:before {
+    width: 100%;
+}
+
+.nav-bar {
+    width: 75%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+header.Sticky .nav-bar {
+    height: 50px;
+}
+
+.nav-initial nav ul {
+    display: flex;
+}
+
+/*==== Section =====*/
+
+.container {
+    width: 75%;
+    height: 830px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8888;
+}
+
+/*==== Section-container-text-btn =====*/
+
+.container .container-text-btn {
+    width: 55%;
+    height: 60%;
+    align-items: left;
+    margin-top: 15%;
+}
+/*==== h2 and h3 =====*/
+
+.text-presentation h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.text-presentation h2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.text-presentation h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.information .information-text {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--color-gray-);
+    margin-top: 7%;
+}
+
+
+/*==== IMG =====*/
+
+.img-mine .img-anr {
+    width: 501px;
+    height: 787px;
+}
+
+/*==== Contact Me =====*/
+
+.btn {
+    
+    width: 141px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-btn-);
+    margin-top: 10%;
+    margin-left: 10px;
+}
+.btn a {
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn a:hover {
+    color: #5F6A6A;
+}
+
+/*==== Scroll Down =====*/
+
+.scroll-type {
+    width: 21%;
+    margin-left: 10px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.scroll-type .scroll {
+    color: var(--color-scroll);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.scroll-type .scroll-arrow{
+    margin-left: 10px;
+    color: var(--color-scroll);
+
+}
+
+
+.container-text-btn .scroll-type img {
+    animation: scroll-arrow ease 1.5s infinite;
+}
+
+@keyframes scroll-arrow {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(10px);
+    }
+}
+
+/*==== icons =====*/
+
+.container .element-font-items {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.container .element-font-items a {
+    color: var(--color-black-);
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.container .element-font-items a:hover {
+    color: #5E5E5E;
+    transform: scale(1.5);
+}
+
+
+
