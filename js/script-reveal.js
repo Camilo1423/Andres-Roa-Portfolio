@@ -11,7 +11,7 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'left',
         distance: '-100px',
-        delay: 800,
+        delay: 1000,
 
     });
 
@@ -19,7 +19,7 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'left',
         distance: '-100px',
-        delay: 1300,
+        delay: 1200,
     });
 
     sr.reveal ('.text-3', {
@@ -33,14 +33,14 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'top',
         distance: '-100px',
-        delay: 1800,
+        delay: 1500,
     });
 
     sr.reveal ('.text-5', {
         duration: 3000,
         origin: 'top',
         distance: '-100px',
-        delay: 2100,
+        delay: 1700,
     });
 
     sr.reveal ('.text-6', {
