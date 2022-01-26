@@ -78,3 +78,46 @@ window.sr = ScrollReveal();
         delay: 2600,
     });
 
+
+    /* Scroll second page */
+
+    sr.reveal ('.reveal-1', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+    });   
+    
+    sr.reveal ('.reveal-2', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+        delay: 200,
+    });
+
+    sr.reveal ('.reveal-3', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+        delay: 400,
+    });
+
+    sr.reveal ('.reveal-4', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+        delay: 600,
+    });
+
+    sr.reveal ('.reveal-5', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+        delay: 800,
+    });
+
+    sr.reveal ('.reveal-6', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px',
+        delay: 1000,
+    });   

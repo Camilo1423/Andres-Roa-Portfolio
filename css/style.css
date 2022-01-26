@@ -13,7 +13,9 @@
     --box-shadow-: 0px 0px 20px rgb(0 0 0 / 20%);
 }
 
-
+.flex-center {
+    margin: 0 auto;
+}
 
 /*=== reset body ====*/
 
@@ -63,6 +65,7 @@ header.Sticky {
     font-size: 30px;
     margin: 0;
     color: var(--color-black-);
+    transition: 0.3s ease;
 }
 
 .text-andres a {
@@ -103,6 +106,10 @@ header.Sticky {
 
 header.Sticky .nav-bar {
     height: 50px;
+}
+
+header.Sticky .nav-bar .text-andres .title-name {
+    font-size: 20px;
 }
 
 .nav-initial nav ul {
@@ -157,9 +164,23 @@ header.Sticky .nav-bar {
 
 /*==== IMG =====*/
 
+.img-mine {
+    width: 501px;
+    height: 787px;
+}
+
 .img-mine .img-anr {
     width: 501px;
     height: 787px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) brightness(120%);
+    transition: 0.3s;
+}
+
+.img-anr:hover {
+    -webkit-filter: grayscale(100%);
+    filter: none;
+    transform: scale(1.05);
 }
 
 /*==== Contact Me =====*/
@@ -244,4 +265,165 @@ header.Sticky .nav-bar {
 }
 
 
+/*==== Section 2 =====*/
 
+.space {
+    width: 100%;
+    height: 160px;
+}
+
+/*==== img number 2 =====*/
+
+.picture-and-information .img2 img {
+    width: 428px;
+    height: 495px;
+    border-radius: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) brightness(120%);
+    transition: 0.3s ease;
+}
+
+.picture-and-information .img2 img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: none;
+    transform: scale(1.05);
+}
+
+/*==== title about me =====*/
+
+.container-section-2 .about-transparent {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, #494949  70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+
+}
+
+.container-section-2 .about-me {
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-80px);
+}
+
+.container-2 {
+    width: 100%;
+    height: 1080px;
+}
+.container-section-2 {
+    width: 75%;
+}
+
+.title-2 {
+    width: 100%;
+    text-align: center;
+}
+.picture-and-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.center-items {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-items-2 {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.line-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #707070;
+}
+
+.btn-2 {
+    margin-top: 30px;
+    width: 163px;
+    height: 54px;
+    background-color: var(--color-black-);
+    display: flex;
+    align-items: center;
+}
+
+.btn-2 a {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-2 a:hover {
+    color: #5F6A6A;
+}
+
+.picture-and-information .img2 {
+    width: 40%;
+    text-align: center;
+}
+
+
+.information-2 {
+    margin-top: 0;
+    width: 50%;
+    height: 70%;
+}
+
+.information-2 .im-andres {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: 70px;
+}
+
+.information-2 .information-rotate {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.information-2 .container-information {
+    margin-top: 10%;
+}
+
+/*==== experiencia =====*/
+
+.experence .years {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 0px;
+}
+
+.experence p {
+    font-weight: 600;
+    font-size: 15px;
+    color: #707070;
+}
+
+/*==== btn scroll up =====*/
+
+.ir-arriba {
+	display: none;
+	padding: 15px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.ir-arriba i {
+    font-size:20px;
+    color: var(--color-black-);
+}
