@@ -1,9 +1,15 @@
 'use strict'
 
 window.addEventListener("scroll", function(){
-    const header = document.querySelector("header");
+	const header = document.querySelector("header");
     header.classList.toggle("Sticky", window.scrollY > 0);
 })
+
+/* preload */
+
+setTimeout(function(){
+	$('.loader').fadeToggle();
+  },2000);
 
 
 $(".rotate").textrotator({
@@ -13,7 +19,7 @@ $(".rotate").textrotator({
   });
 
 
-  /* scroll up */
+/* scroll up */
 
   $(document).ready(function(){
 
@@ -32,3 +38,26 @@ $(".rotate").textrotator({
 	});
 
 });
+
+/* Dark/light mood */
+
+  const DarkMood = document.querySelector(".mood-light-or-night");
+
+  DarkMood.addEventListener("click", () => {
+	  document.body.classList.toggle("dark-theme");
+	  DarkMood.classList.toggle("sun");
+
+	  localStorage.setItem("saved-theme", getCurrentTheme());
+	  localStorage.setItem("saved-icon", getCurrentIcon());
+  })
+
+  const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
+  const getCurrentIcon = () => DarkMood.classList.contains("sun") ? "sun" : "moon";
+
+  const savedTheme = localStorage.getItem("saved-theme");
+  const savedIcon = localStorage.getItem("saved-icon");
+
+  if(saveTheme) {
+	  document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+	  DarkMood.classList[savedIcon === "sun" ? "add" : "revome"]("sun");
+  }

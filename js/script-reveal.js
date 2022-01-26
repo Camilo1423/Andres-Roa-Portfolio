@@ -3,7 +3,8 @@ window.sr = ScrollReveal();
     sr.reveal ('.img-mine', {
             duration: 5000,
             origin: 'right',
-            distance: '-50px'
+            distance: '-50px',
+            delay: 1000,
 
     });
     
@@ -48,6 +49,13 @@ window.sr = ScrollReveal();
         origin: 'bottom',
         distance: '-100px',
         delay: 1300,
+    });
+
+    sr.reveal ('.text-6-2', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '-100px',
+        delay: 2600,
     });
 
     sr.reveal ('.text-7', {
