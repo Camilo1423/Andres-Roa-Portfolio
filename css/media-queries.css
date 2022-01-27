@@ -1,0 +1,77 @@
+/* laptop of width 1536px */ 
+
+@media screen and (max-width:1536px) and (min-width:1480px) {
+    .text-andres .title-name {
+        font-size: 24px;
+    }
+
+    .menu-bar .nav-initial a {
+        font-size: 12px;
+    }
+
+    header.Sticky .nav-bar .text-andres .title-name {
+        font-size: 20px;
+    }
+
+    .img-mine .img-anr {
+        width: 380px;
+        height: 597px;
+    }
+    .img-mine {
+        width: 380px;
+        height: 597px;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .text-presentation h2 {
+        font-size: 50px;
+    }
+    
+    .text-presentation h3 {
+        font-size: 20px;
+    }
+
+    .information .information-text {
+        font-size: 18px;
+    }
+
+    .scroll-type {
+        width: 21%;
+        margin-left: 10px;
+        margin-top: 50px;
+        display: flex;
+    }
+    
+    .scroll-type .scroll {
+        color: var(--color-word-black-);
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .scroll-type .scroll-arrow{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 18.06px;
+        height: 20.44px;
+    }
+
+    .btn {
+        width: 103px;
+        height: 36px;
+    }
+    .btn a {
+        font-size: 10px;
+    }
+
+    .container .element-font-items a {
+        font-size: 1.3em;
+    }
+
+    .container .element-font-items a:hover {
+        transform: scale(1.3);
+    }
+    
+}
